@@ -26,16 +26,16 @@ function jumlahTabungan(listHarga, history) {
   let listHarga = {
     nasiGoreng: 5000,
     sotoAyam: 8000,
-    mieAyam: 7000
-  }
+    mieAyam: 7000,
+  };
 
   let history = [
     "Senin: sotoAyam",
     "Selasa: nasiGoreng",
     "Rabu: nasiGoreng",
     "Kamis: mieAyam",
-    "Jumat: nasiGoreng"
-  ]
+    "Jumat: nasiGoreng",
+  ];
 }
 
 console.log(jumlahTabungan(listHarga, history));
