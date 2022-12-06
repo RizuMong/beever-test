@@ -23,35 +23,49 @@ OUTPUT:
 */
 
 function jumlahTabungan(listHarga, history) {
-  
+  let listHarga = {
+    "Nasi Goreng": 5000,
+    "Mie Ayam": 4000,
+    "Sate Ayam": 6000,
+  };
+
+  let history = [
+    { hari: "Senin", makan: "Nasi Goreng" },
+    { hari: "Selasa", makan: "Mie Ayam" },
+    { hari: "Rabu", makan: "Sate Ayam" },
+    { hari: "Kamis", makan: "Nasi Goreng" },
+    { hari: "Jumat", makan: "Mie Ayam" },
+  ];
 }
+
+console.log(jumlahTabungan(listHarga, history));
 
 var hargaMakanan = [
   {
     nama: "ayam",
-    harga: 5000
+    harga: 5000,
   },
   {
     nama: "nasi",
-    harga: 2000
+    harga: 2000,
   },
   {
     nama: "cola",
-    harga: 1000
+    harga: 1000,
   },
   {
     nama: "chiki",
-    harga: 1500
+    harga: 1500,
   },
   {
     nama: "hotdog",
-    harga: 3000
+    harga: 3000,
   },
   {
     nama: "aqua",
-    harga: 2000
-  }
-]
+    harga: 2000,
+  },
+];
 
-var historyPembelian = `Senin-ayam,nasi,cola.Selasa-chiki,hotdog.Rabu-ayam,chiki.Kamis-hotdog.Jumat-chiki,cola,nasi`
-console.log(jumlahTabungan(hargaMakanan, historyPembelian))
+var historyPembelian = `Senin-ayam,nasi,cola.Selasa-chiki,hotdog.Rabu-ayam,chiki.Kamis-hotdog.Jumat-chiki,cola,nasi`;
+console.log(jumlahTabungan(hargaMakanan, historyPembelian));
