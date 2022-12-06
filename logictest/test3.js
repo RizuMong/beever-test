@@ -23,22 +23,25 @@ OUTPUT:
 */
 
 function jumlahTabungan(listHarga, history) {
-  let listHarga = {
-    nasiGoreng: 5000,
-    sotoAyam: 8000,
+  var listHarga = {
+    nasiGoreng: 2000,
+    baksoGoreng: 5500,
+    chiki: 3500,
     mieAyam: 7000,
+    buburAyam: 5000,
   };
 
-  let history = [
-    "Senin: sotoAyam",
-    "Selasa: nasiGoreng",
-    "Rabu: nasiGoreng",
-    "Kamis: mieAyam",
-    "Jumat: nasiGoreng",
+  var history = [
+    "Senin: Nasi Goreng",
+    "Selasa: Bakso Goreng",
+    "Rabu: Chiki",
+    "Kamis: Mie Ayam",
+    "Jumat: Bubur Ayam"
   ];
 }
 
 console.log(jumlahTabungan(listHarga, history));
+// Output: {Senin: 2000, Selasa: 5500, Rabu: 3500, Kamis: 7000, Jumat: 5500, TotalTabungan: 23500}
 
 var hargaMakanan = [
   {
